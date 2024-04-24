@@ -1,0 +1,29 @@
+caching packages inside the browser
+indexedDB - check on Application -> IndexedDB tab, similar to localStorage
+localForage
+
+
+When building, ESBuild generates js file and css file.
+ESBuild doesn't have a filesystem to work with(we are working on a browser), it is not able to load up the css that we import(or the path to load the css).
+https://esbuild.github.io/content-types/#global-css
+
+
+Later there will be multiple Preview compoments. They will need to use the bundling logic 
+
+L.158
+When dragging, if mouse goes over to iframe, it loses event(or communication) because the event is sent into the iframe as opposed to the top level document. 
+To solve this, we can add html element on top of(or over) iframe and that html element will receive the event as opposed to into the iframe
+
+When dragging, on body element react-draggable-transparent-selection class get applied. With that, we can add pesudo after class and this pesudo class sits on top of iframe so it doesn't block the event
+
+Section 14
+async error invalid code error 
+Caught, Uncaught error in/outside of try catch 
+error event default behavior
+runtime error, compilation error
+
+
+Section 19 L.248
+createBundle in useEffect dependency array in code-cell.
+affected causing flashing issue on preview. it was due to the bound action. 
+every time when the code-cell is re-rendered, it created a new version of the bound action. fixed by memoizing the action to cache.
