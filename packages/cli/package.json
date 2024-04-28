@@ -1,6 +1,6 @@
 {
   "name": "pocket-codepen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "dist"
   ],
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pocket-codepen/local-client": "^1.0.0"
+    "@pocket-codepen/local-client": "^1.0.1"
   },
   "devDependencies": {
-    "@pocket-codepen/local-api": "^1.0.0",
+    "@pocket-codepen/local-api": "^1.0.1",
     "@types/node": "^20.12.7",
     "commander": "^12.0.0",
     "esbuild": "^0.20.2",
