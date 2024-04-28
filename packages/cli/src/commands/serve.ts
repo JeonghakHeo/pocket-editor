@@ -1,11 +1,12 @@
 import path from 'path'
 import { Command } from 'commander'
-import { serve } from 'local-api'
+import { serve } from '@pocket-codepen/local-api'
+
+const isProduction = process.env.NODE_ENV === 'production'
 
 interface LocalApiError {
   code: string
 }
-const isProduction = process.env.NODE_ENV === 'production'
 
 export const serveCommand = new Command()
   .command('serve [filename]')
@@ -24,9 +25,8 @@ export const serveCommand = new Command()
         dir,
         !isProduction
       )
-
       console.log(
-        `Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file`
+        `Opened ${filename}. Navigate to http://localhost:${options.port} to edit the file.`
       )
     } catch (err) {
       if (isLocalApiError(err)) {
