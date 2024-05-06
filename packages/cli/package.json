@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pocket-studio/local-client": "^1.0.2"
+    "@pocket-studio/local-client": "^1.0.4"
   },
   "devDependencies": {
-    "@pocket-studio/local-api": "^1.0.2",
+    "@pocket-studio/local-api": "^1.0.4",
     "@types/node": "^20.12.7",
     "commander": "^12.0.0",
     "esbuild": "^0.20.2",
