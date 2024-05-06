@@ -2,7 +2,6 @@ import path from 'path'
 import { Command } from 'commander'
 import { serve } from '@pocket-studio/local-api'
 
-// test comment
 const isProduction = process.env.NODE_ENV === 'production'
 
 interface LocalApiError {
