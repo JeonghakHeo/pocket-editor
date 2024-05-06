@@ -22,7 +22,7 @@ export const serve = (
     )
   } else {
     const packagePath = require.resolve(
-      '@pocket-codepen/local-client/build/index.html'
+      '@pocket-studio/local-client/build/index.html'
     )
     app.use(express.static(path.dirname(packagePath)))
   }

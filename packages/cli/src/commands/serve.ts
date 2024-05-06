@@ -1,6 +1,6 @@
 import path from 'path'
 import { Command } from 'commander'
-import { serve } from '@pocket-codepen/local-api'
+import { serve } from '@pocket-studio/local-api'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
