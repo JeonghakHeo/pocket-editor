@@ -1,6 +1,6 @@
 {
   "name": "pocket-studio",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "files": [
     "dist"
   ],
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pocket-studio/local-client": "^1.0.5"
+    "@pocket-studio/local-client": "^1.0.6"
   },
   "devDependencies": {
-    "@pocket-studio/local-api": "^1.0.5",
+    "@pocket-studio/local-api": "^1.0.6",
     "@types/node": "^20.12.7",
     "commander": "^12.0.0",
     "esbuild": "^0.20.2",
