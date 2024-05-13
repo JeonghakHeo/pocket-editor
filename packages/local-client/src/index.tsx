@@ -9,7 +9,6 @@ const el = document.getElementById('root')
 
 const root = ReactDOM.createRoot(el!)
 
-// test
 const App = () => {
   return (
     <Provider store={store}>
