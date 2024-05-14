@@ -6,7 +6,7 @@ This is an interactive coding environment. You can write Javascript, see it exec
 - The code in each code editor is all joined together into one file. If you define a variable in cell #1, you can refer to it in any following cell!
 - You can show any React component, string, number, or anything else by calling the `show` function. This is a function built into this environment. Call show multiple times to `show` multiple values
 - Re-order or delete cells using the buttons on the top right
-- Add enw cells by hovering on the divider between each cell
+- Add new cells by hovering on the divider between each cell
 
 All of your changes get saved to the file you opened PocketStudio with. So if you ran `npx pocket-studio serve test.js`, all of the text code you write will be saved to the `test.js` file.
 
@@ -20,6 +20,24 @@ npx install pocket-studio
 
 ```
 npx pocket-studio serve
+```
+
+## Commands
+
+```
+serve [options] [filename] Open a file for editing
+help [command] display help for command
+```
+
+## Options
+
+```
+-p -port Port to connect
+
+serve -p 80
+serve -p80
+serve --port 80
+serve --port=80
 ```
 
 ## Usage
@@ -41,13 +59,13 @@ const Counter = () => {
 };
 
 // Display any variable or React component by calling 'show'
-show(Counter);
+show(<Counter />);
 ```
 
 ```
 // Cell #2
 const App = () => {
-  returnn (
+  return (
     <div>
       <h3>App Says Hi!</h3>
       <i>Counter component will be rendered below...</i>
@@ -61,18 +79,5 @@ const App = () => {
   );
 };
 
-show(App);
-```
-
-## Commands
-
-```
-serve [options] [filename] Open a file for editing
-help [command] display help for command
-```
-
-## Options
-
-```
--p -port Port to connect
+show(<App />);
 ```
