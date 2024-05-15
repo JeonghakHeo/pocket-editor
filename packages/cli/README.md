@@ -15,13 +15,13 @@ All of your changes get saved to the file you opened PocketStudio with. So if yo
 ## Installation
 
 ```
-npx install pocket-studio
+$ npm install pocket-studio
 ```
 
 ## Quick Start
 
 ```
-npx pocket-studio serve
+$ npx pocket-studio serve
 ```
 
 ## Commands
@@ -41,27 +41,25 @@ serve --port 4000
 
 ## Usage
 
-```
+```javascript
 // Cell #1
-import { useState } from 'react';
+import { useState } from 'react'
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>
-        Click
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click</button>
       <h3>Count: {count}</h3>
     </div>
-  );
-};
+  )
+}
 
 // Display any variable or React component by calling 'show'
-show(<Counter />);
+show(<Counter />)
 ```
 
-```
+```javascript
 // Cell #2
 const App = () => {
   return (
@@ -73,10 +71,10 @@ const App = () => {
         Counter was declared in an earlier cell -
         we can reference it here!
        */}
-       <Counter />
+      <Counter />
     </div>
-  );
-};
+  )
+}
 
-show(<App />);
+show(<App />)
 ```
