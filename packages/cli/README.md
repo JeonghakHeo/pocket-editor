@@ -2,7 +2,7 @@
 
 This is an interactive coding environment. You can write Javascript, see it executed, and write comprehensive documentation using markdown.
 
-![preview](public/preview.png)
+![preview](https://github.com/JeonghakHeo/pocket-studio/blob/main/packages/cli/public/preview.png)
 
 - Click any text cell to edit it
 - The code in each code editor is all joined together into one file. If you define a variable in cell #1, you can refer to it in any following cell!
